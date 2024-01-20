@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" >
+        <title>Sample Analytics Blog</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-P8ZBZ9TV');
+    </script>
+    </head>
+    <!-- End Google Tag Manager -->
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8ZBZ9TV"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header>
+            <h1>Analytics Blog</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+        </nav>
+        <section id="home">
+            <h2>Welcome to Analytics Blog</h2>
+            <p>
+                Explore the latest insights and trends in analytics on our blog. From basic concepts to advanced techniques,
+                we've got you covered.
+            </p>
+            <img src="images/cover.jpg">
+        </section>
+        <section id="articles">
+            <h2>Featured Articles</h2>
+        <article>
+            <h3><a href="https://psu.pb.unizin.org/ist110/chapter/11-1-introduction-to-analytics/" target="_blank">Introduction-to-analytics</a></h3>
+            <p>
+                Dive into the fundamentals of analytics and understand its importance in today's data-driven world.
+            </p>
+        </article>
+
+        <article>
+            <h3><a href="https://psu.pb.unizin.org/ist110/chapter/11-1-introduction-to-analytics/" target="_blank">Advanced Analytics Techniques</a></h3>
+            <p>
+                Explore advanced analytics methods and learn how to extract valuable insights from complex data sets.
+            </p>
+        </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>
+                Have questions or suggestions? Feel free to reach out to us. We value your feedback!
+            </p>
+            <button id="showFormButton" onclick="showFunction()">Contact Us</button>
+            <form id="contactForm" name="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    
+        <footer>
+            <p>&copy; 2024 Analytics Blog</p>
+        </footer>
+        <script>
+            function showFunction() {
+                document.getElementById("showFormButton").style.display="none";
+                document.getElementById("contactForm").style.display = "block";
+            }
+        </script>
+        <script src="google_sheet.js" ></script>
+    </body>
+</html>
