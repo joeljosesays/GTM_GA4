@@ -61,7 +61,7 @@
                 Have questions or suggestions? Feel free to reach out to us. We value your feedback!
             </p>
             <button id="showFormButton" onclick="showFunction()">Contact Us</button>
-            <form id="contactForm" name="form">
+            <form id="contactForm" >
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Name" required>
 
@@ -82,6 +82,20 @@
             function showFunction() {
                 document.getElementById("showFormButton").style.display="none";
                 document.getElementById("contactForm").style.display = "block";
+            }
+        </script>
+        <!--Script for datalayer-->
+        <script>
+            function setEmailInDataLayer() {
+                var userEmail = document.getElementById("email");
+
+                // push the data layer
+                window.datalayer = window.datalayer || [];
+                window.datalayer.push({
+                    'event':'formSubmission',
+                    'userEmail': userEmail
+                }
+                )
             }
         </script>
         <script src="google_sheet.js" ></script>
