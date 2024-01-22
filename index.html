@@ -87,12 +87,12 @@
         <!--Script for datalayer-->
         <script>
             function setEmailInDataLayer() {
-                var userEmail = document.getElementById("email");
+                var userEmail = document.getElementById("email").value;
 
                 // push the data layer
                 window.datalayer = window.datalayer || [];
                 window.datalayer.push({
-                    'event':'formSubmission',
+                    'event':'form_submit',
                     'userEmail': userEmail
                 }
                 )
