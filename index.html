@@ -88,15 +88,13 @@
         <script>
             function setEmailInDataLayer() {
                 var userEmail = document.getElementById("email").value;
-
                 // push the data layer
-                window.datalayer = window.datalayer || [];
-                window.datalayer.push({
-                    'event':'form_submit',
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    'event': 'form_submit',
                     'userEmail': userEmail
-                }
-                )
-            }
+        });
+    }
         </script>
         <script src="google_sheet.js" ></script>
     </body>
