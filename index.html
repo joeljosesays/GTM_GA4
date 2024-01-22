@@ -71,7 +71,7 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
 
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" onclick="setEmailInDataLayer()">
             </form>
         </section>
     
@@ -92,7 +92,7 @@
                 // push the data layer
                 window.datalayer = window.datalayer || [];
                 window.datalayer.push({
-                    'event':'form_submit',
+                    'event':'formSubmission',
                     'userEmail': userEmail
                 }
                 )
